@@ -109,7 +109,7 @@
 		return this.charAt(0).toUpperCase() + this.slice(1);
 	}
 	const updateUsers = () => {
-		$.getJSON("https://live.lannaradio.com/usersonline.php", function(data) {
+		$.getJSON("https://www.lannaradio.com/radio/usersonline.php", function(data) {
 			$('.online').html(data.result);
 		});
 	}
