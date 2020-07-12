@@ -115,26 +115,6 @@ body{
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
-.powerbox {
-	margin-top: 450px;
-	width: 360px;
-	height: 180px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	background-color: #341f97;
-	-webkit-border-top-left-radius: 1px;
-	-webkit-border-bottom-left-radius: 1px;
-	-moz-border-radius-topleft: 1px;
-	-moz-border-radius-bottomleft: 1px;
-	border-top-left-radius: 1px;
-	border-bottom-left-radius: 1px;
-}
-
-.time {
-	margin-top: 600px;
-}
 	
 @keyframes animate {
 
@@ -168,29 +148,7 @@ body{
                     <li></li>
                     <li></li>
                     <li></li>
-            <div class="power">
-		<div class="powerbox">
-			<left><IFRAME name="flash" src="https://www.lannaradio.com/radio/player.php?bgcolor=&fontcolor=&player=7&dj=yes&listener=yes&bitrate=yes&song=yes&ipaddress=9&port=8000&port80=yes&encoding=utf8" width=420 height=200 frameborder=0 scrolling=no></IFRAME></left>
-		</div>
-		<div class="chatinfo">
-		<div class="time"></div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script>
-	String.prototype.capitalize = function() {
-		return this.charAt(0).toUpperCase() + this.slice(1);
-	}
-	const updateTime = () => {
-		let dateString = new Date().toLocaleString("en-US");
-		let fTime = dateString.replace(", ", " - ");
-		$('.time').html(fTime);
-	}
-	updateTime();
-	setInterval(updateUsers, 40*1000); // every 40 seconds
-	setInterval(updateTime, 1000); // every 1 sec obvious
-	</script>
-	</ul>
+            </ul>
 </div>
-	
   </body>
 </html>
