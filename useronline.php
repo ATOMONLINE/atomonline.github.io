@@ -1,31 +1,30 @@
 <?php
+/* Start the session */
+session_start(); 
 
-	function userOnlineOffline($uLastActionTime)
-	{
-        //เวลาที่จะเช็ค เอาเวลาปัจจุบัน  ลบด้วย 180  (180 คือ 30นาที) นั้นคือ ย้อนหลังไป 30 นาที
-		$timeCheck	=	time() - 180;
+/* Define how long the maximum amount of time the session can be inactive. */
+define("MAX_IDLE_TIME", 3); 
 
-        // ถ้าความเลือนไหวของสมาชิก มากกว่า เวลาที่เช็ค นั้นคือมากกว่า 30 นาที เขาต้องออนไลน์ในช่วง 29- ปัจจุบันแน่นอน
-		if ($uLastActionTime > $timeCheck)
-			// แสดงว่าออนไลน์อยู่
-			return 'ออนไลน์ในขณะนี้';
-		else
-			// ไม่อยู่แล้ว
-			return 'ออฟไลน์';
+function getOnlineUsers(){ 
+
+	if ( $directory_handle = opendir( session_save_path() ) ) {
+		$count = 0;
+		while ( false !== ( $file = readdir( $directory_handle ) ) ) {
+			if($file != '.' && $file != '..'){
+				// Comment the 'if(...){' and '}' lines if you get a significant amount of traffic
+				//if(time()- fileatime(session_save_path() . '\\' . $file) < MAX_IDLE_TIME * 60) {
+					$count++;
+				//}
+			} 
+
+		}
+		closedir($directory_handle); 
+
+		return $count;
+	} else {
+		return false;
 	}
+} 
 
-    //วิธีใช้งาน
-    //เหตุการณ์ที่หนึ่ง
-    //จำลองว่า เวลาความเลือนไหวของสมาชิกคือ ณ ตอนนี้ แน่นอนว่า ต้องออนไลน์อยู่
-    $uLastActionTime = time();
-
-    echo userOnlineOffline($uLastActionTime);
-
-    //วิธีใช้งาน
-    //เหตุการณ์ที่หนึ่ง
-    //จำลองว่า เวลาความเลือนไหวของสมาชิกคือ ผ่านไป 185 วินาที นัน้คือ เลย 30 นาทีแล้ว เขาต้องออฟไลนืแน่ๆ
-    $uLastActionTime = time() - 185;
-
-    echo userOnlineOffline($uLastActionTime);
-
+echo 'Number of online users: ' . getOnlineUsers() . "\n";
 ?>
