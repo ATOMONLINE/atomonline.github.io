@@ -18,9 +18,9 @@ Bitrate: 128 kb/s
 
 header('Content-Type: audio/mpeg');
 
-$server = "ohmi-design.com";
-$port = "9156";
-$mount = "1";
+$server = "[Server-IP-Address]";
+$port = "[Port]";
+$mount = "[Mount-Point]";
 
 // HTTP Radio Stream URL with Mount Point
 $url = "http://".$server.":".$port."/".$mount;
@@ -33,7 +33,7 @@ $f=fopen($url,'r');
 if(!$f) exit;
 while(!feof($f))
 {
-	echo fread($f,96);  
+	echo fread($f,128);  
 	flush();
 }
 fclose($f);
