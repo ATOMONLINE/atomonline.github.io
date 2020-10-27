@@ -8756,54 +8756,6 @@ h5 {
   color: #F5811F;
 }
 
-.middle-block {
-  background: transparent url("/loykrathong/images/BG-web-w.jpg") no-repeat;
-  background-size: contain;
-}
-
-.stats-social {
-  margin-top: 20px;
-  font-family: Kanit, sans-serif;
-}
-
-.stats-social .social-share .btn-social {
-  text-align: center;
-}
-
-.stats-social .social-share .btn-social a {
-  display: block;
-  color: #fff;
-  padding: 10px 0;
-}
-
-.stats-social .social-share .btn-gg {
-  background-color: #EB201B;
-}
-
-.stats-social .social-share .btn-fb {
-  background-color: #325E95;
-}
-
-.stats-social .social-share .btn-tw {
-  background-color: #00B0E9;
-}
-
-.stats-social .nums-items {
-  color: #F6821F;
-  font-size: 36px;
-}
-
-.stats-social .nums-items small {
-  color: #111;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 360px) {
-  .stats-social .nums-items {
-    font-size: 24px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .stats-social .nums-items {
     text-align: center;
