@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:800|Lobster|Pacifico');
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#canvas{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.o_heart{
+  fill: #01A5D4;
+}
+.i_heart{
+  fill: #AAE5E8;
+}
+
+.text{
+  z-index: 1000;
+  position: absolute;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  font-family: 'Dosis';
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFB3C3;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 3px solid #FCE3E9;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.arrow_container{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  border: 1px solid black;
+  z-index: 1000;
+  bottom: 15px;
+  left: 0px;
+}
