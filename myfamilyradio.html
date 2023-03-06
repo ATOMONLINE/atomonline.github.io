@@ -1,93 +1,99 @@
-<!doctype HTML>
-<html lang="th">
-	<head>
-		<meta charset="UTF-8">
-		<title>Myfamily Radio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato&display=swap">
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-		<style>
-			body {
-			background-image: url(https://img.xatblog.net/image/BzcpnJQyi.png);
-	  		overflow: hidden;
-			font-family: 'Lato', sans-serif;
-			-webkit-touch-callout: none;
-	    		-webkit-user-select: none;
-	     		-khtml-user-select: none;
-	       		-moz-user-select: none;
-	        	-ms-user-select: none;
-	            user-select: none;
-			}
-			.texts {
-				display: inline-block;
-			}
-			.chat-box {
-				margin: 0;
-				position: absolute;
-				top: 40%;
-				left: 35%;
-				transform: translate(-50%, -50%);
-			}
-			.chat-name {
-				color: #fff;
-				font-size: 35px;
-				position: absolute;
-				top: 25px;
-				margin-left: 25px;
-			}
-			.site-link {
-				color: #fff;
-				font-size: 15px;
-				position: absolute;
-				top: 65px;
-				margin-left: 45px;
-				border-bottom: 1px solid #0000ff;
-				-webkit-animation: switch 1s steps(1, start) infinite;
-	  			animation: switch 1s steps(1, start) infinite;
-			}
-			.info {
-				position: absolute;
-				height: 200px;
-	  			width: 450;
-				top: 13%;
-				right: 0.5%;
-				padding: 5px;
-				color: #fff;
-				border-radius: 4px;
-				border: solid 1px #1B9CFC;
-			}
-			.info-icon {
-				position: absolute;
-				top: -18px;
-				margin-left: 65px;
-				color: #f1c40f;
-			}
-			@keyframes switch {
-				0%,100% {
-					border-bottom-color: #38ada9;
-				}
-				50% {
-					border-bottom-color: #b71540;
-				}
-			}
-		</style>
-	</head>
-	<body>
-	<section class="chat-box">
-	  <section class="help-icon">
-			<figure class="ball"></figure>
-			<figure class="shadow"></figure>
-		</section>
-	  <section class="texts"></section>
-	</section>
-	<section class="info" dir="rtl">
-		<div class="info-icon">
-			<i class="fas fa-bolt fa-2x"></i>
-		</div>
-		<section class="power">
-			<div class="id"><iframe align="middle" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://stream.lannaradio.com/8030/player.php?bgcolor=&fontcolor=&player=7&dj=yes&listener=yes&bitrate=yes&song=yes&ipaddress=9&port=8000&port80=yes&encoding=utf8" width=100% height=200></iframe></div>
-		</section>
-	</section>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>kite</title>
+
+
+<script src="/cdn-cgi/apps/head/q_9ZgAEBontqOVzChaCX_uKRMx8.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <!-- partial:index.partial.html -->
+  <link rel="stylesheet" href="https://www.notradio.in.th/tools/xatframes/not/valentines/style.css?=3">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="canvas">
+  <defs>
+    <g id="heart">
+      <g>
+        <g>
+          <path class="o_heart" d="M102.7,12.4L102.7,12.4C90.5,0.2,71.3-1,57.7,8.8c-13.6-9.9-32.9-8.7-45.2,3.5l0,0
+                                   c-13.6,13.6-13.6,35.8,0,49.3L48.8,98c1.8,1.8,4,2.9,6.3,3.3c3.9,0.9,8.2-0.1,11.2-3.2l36.3-36.3C116.2,48.2,116.2,26,102.7,12.4
+                                   z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path class="i_heart" d="M74.7,34L74.7,34c-4.6-4.6-11.9-5.1-17.1-1.4c-5.2-3.8-12.5-3.3-17.1,1.3c-5.1,5.1-5.1,13.6,0,18.7
+                                   l13.8,13.8c0.7,0.7,1.5,1.1,2.4,1.3c1.5,0.3,3.1-0.1,4.2-1.2l13.8-13.8C79.9,47.6,79.9,39.2,74.7,34z"/>
+        </g>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<!--<span class="text">Be My Valentine?</span>-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js'></script><script  src="https://www.notradio.in.th/tools/xatframes/not/valentines/script.js"></script>
+
+  <button class="floating-btn">
+	iNOT (1919191)
+</button>
+  <!-- partial -->
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://www.notradio.in.th/tools/xatframes/style-cr-not.css?=61" rel="stylesheet"/>
+
 </body>
 </html>
+
+
+
+
+<meta http-equiv="refresh" content="300"/>
+
+
+
+
+        <script language="JavaScript">
+
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message='';
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function('return false')
+// -->
+</script>
+
+<script language="JavaScript1.2">
+//Disable select-text script (IE4+, NS6+)
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+//if IE4+
+document.onselectstart=new Function ("return false")
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
